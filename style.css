@@ -156,13 +156,15 @@ section {
     display: flex;
 }
 
+
+
 /* Profile Sections */
 
 #profile {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
+    height: 70vh;
 }
 
 .section__pic-container {
@@ -189,7 +191,6 @@ section {
 
 .title {
     font-size: 3rem;
-    text-align: center;
 }
 
 #socials-container {
@@ -254,3 +255,20 @@ section {
 .btn-container {
     gap: 1rem;
 }
+
+/* About Me Page */
+
+.home-logo {
+    font-size: 2rem;
+}
+
+.about-title {
+    font-size: 4rem;
+    margin-top: 20vh;
+}
+
+.about-text {
+    width: 45rem;
+    margin: 0 auto;
+}
+

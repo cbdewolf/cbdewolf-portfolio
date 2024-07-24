@@ -9,33 +9,19 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Christian DeWolf</div>
+        <div class="home-logo">
+            <a href="index.html#home">Christian DeWolf</a>
+        </div>
         <div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="about.html#about">About</a></li>
+                <li><a href="experience.html#experience">Experience</a></li>
+                <li><a href="projects.html#projects">Projects</a></li>
+                <li><a href="contact.html#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Christian DeWolf</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
+    <div id="profile">
         <div class="section__pic-container">
             <img src="./assets/pfp.png" alt="Christian DeWolf profile-pic">
         </div>
@@ -67,31 +53,7 @@
                     />
             </div>
         </div>
-    </section>
-    <section id="about">
-        <h1 class="title">About Me</h1>
-        <div class="socials-container">
-            <div class="section__pic-container">
-                <img 
-                    src="./assets/about-pic.png" 
-                    alt="Profle picture "
-                    class="about-pic"
-                />
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img 
-                            src="./assets/experience.png" 
-                            alt="experience icon" 
-                            class="icon"
-                        />
-                        <h3></h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
