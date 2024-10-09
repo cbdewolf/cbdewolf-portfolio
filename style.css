@@ -272,3 +272,53 @@ section {
     margin: 0 auto;
 }
 
+/* experience */
+
+#experience {
+    justify-content: center;
+    gap: 5rem;
+    height: 70vh;
+}
+
+.title {
+    margin-top: -3rem; 
+}
+
+.experience-list,
+.education-list { /* Add styles for the education list */
+    list-style: none;
+    padding: 0;
+}
+
+.experience-list li,
+.education-list li { /* Add styles for each education item */
+    margin-bottom: 2rem;
+}
+
+.experience-list h3,
+.education-list h3 { /* Add styles for education headings */
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.experience-list span,
+.education-list span { /* Add styles for education dates */
+    display: block;
+    font-size: 1rem;
+    color: rgb(85, 85, 85);
+    margin-bottom: 0.5rem;
+}
+
+.experience-list p,
+.education-list p { /* Add styles for education descriptions */
+    font-size: 1rem;
+    color: rgb(85, 85, 85);
+}
+
+/* Add any additional styles for the education section here */
+#education {
+    justify-content: center; /* If using flexbox, add appropriate properties */
+    gap: 5rem; /* Optional, similar to experience */
+    height: auto; /* Adjust height as needed */
+}
