@@ -274,51 +274,119 @@ section {
 
 /* experience */
 
-#experience {
-    justify-content: center;
-    gap: 5rem;
-    height: 70vh;
+/* Container adjustments */
+#experience,
+#education,
+#leadership {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem; /* Smaller gap for more compact spacing */
+    height: auto;
+    padding-left: 2rem;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
+/* Title styling */
 .title {
-    margin-top: -3rem; 
+    margin-top: -1.5rem;
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 0.5rem; /* Reduced space below section titles */
 }
 
+/* List adjustments */
 .experience-list,
-.education-list { /* Add styles for the education list */
+.education-list,
+.leadership-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+/* List item styling */
+.experience-list li,
+.education-list li,
+.leadership-list li {
+    margin-bottom: 1rem; /* Smaller margin for compact list spacing */
+}
+
+/* Headings within list items */
+.experience-list h3,
+.education-list h3,
+.leadership-list h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    text-align: left;
+}
+
+/* Span for dates or subheadings */
+.experience-list span,
+.education-list span,
+.leadership-list span {
+    display: block;
+    font-size: 1rem;
+    color: rgb(85, 85, 85);
+    margin-bottom: 0.3rem; /* Reduced spacing for compact styling */
+    text-align: left;
+}
+
+/* Paragraph text styling */
+.experience-list p,
+.education-list p,
+.leadership-list p {
+    font-size: 1rem;
+    color: rgb(85, 85, 85);
+    margin-bottom: 0.3rem;
+    text-align: left;
+}
+
+#projects {
+    justify-content: center; /* If using flexbox, adjust as needed */
+    gap: 2rem; /* Space between projects */
+}
+
+.projects-list {
     list-style: none;
     padding: 0;
 }
 
-.experience-list li,
-.education-list li { /* Add styles for each education item */
-    margin-bottom: 2rem;
+.projects-list li {
+    margin-bottom: 1rem; /* Space between each project */
 }
 
-.experience-list h3,
-.education-list h3 { /* Add styles for education headings */
-    font-size: 1.5rem;
+.projects-list h3 {
+    font-size: 1.5rem; /* Project title size */
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem; /* Space below project titles */
 }
 
-.experience-list span,
-.education-list span { /* Add styles for education dates */
+.projects-list span {
     display: block;
     font-size: 1rem;
     color: rgb(85, 85, 85);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem; /* Space below technology stack */
 }
 
-.experience-list p,
-.education-list p { /* Add styles for education descriptions */
+.projects-list p {
     font-size: 1rem;
     color: rgb(85, 85, 85);
 }
+.project-button {
+    display: inline-block; /* Makes the link behave like a button */
+    margin-left: 1rem; /* Space between the title and the button */
+    vertical-align: middle; /* Aligns the button with the middle of the text */
+}
 
-/* Add any additional styles for the education section here */
-#education {
-    justify-content: center; /* If using flexbox, add appropriate properties */
-    gap: 5rem; /* Optional, similar to experience */
-    height: auto; /* Adjust height as needed */
+.project-button img {
+    width: 30px; /* Set a smaller width for the button image */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+.project-button:hover img {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
 }
